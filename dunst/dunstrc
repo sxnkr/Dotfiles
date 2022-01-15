@@ -112,7 +112,8 @@
     ### Text ###
 
     font = Source Code Pro Black
-    #font = FiraCode Nerd Font
+    #font = Jetbrains Mono Medium 10
+    #font = FiraCode Nerd Font 10
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -197,7 +198,7 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/ePapirus-Dark:/home/zed/.icons/Win11-Dark
+    icon_path = /usr/share/icons/ePapirus-Dark
 
     ### History ###
 

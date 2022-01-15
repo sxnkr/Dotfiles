@@ -21,9 +21,8 @@ cyan =  #88c5b6
 white = #f7f7f7
 
 [bar/top]
-height = "27"
-width= "100%"
-;1910
+height = 27
+width= 1910
 offset-x = 0.25%
 offset-y = 1%
 
@@ -111,33 +110,24 @@ label-monitor = %name%
 ;label-dimmed-underline = ${color.YELLOW}
 ;label-dimmed-focused-background = ${color.BACKGROUND}
 
-label-focused = %name%
-label-focused-foreground = ${color.BLUE}
-label-focused-background = ${color.BACKGROUND}
-label-focused-underline = ${color.BLUE}
-label-focused-padding = 1
+label-focused = %index%
+label-focused-foreground = #f7f7f7
+label-focused-background = #3306080a
+label-focused-padding = 2
 
-label-occupied = %name%
-label-occupied-foreground = ${color.GREEN}
-label-occupied-background = ${color.BACKGROUND}
-label-occupied-underline = ${color.GREEN}
-label-occupied-padding = 1
+label-occupied = %index%
+label-occupied-foreground = #f7f7f7
+label-occupied-background = #00
+label-occupied-padding = 2
 
-label-urgent = %name%
-label-urgent-foreground = ${color.RED}
-label-urgent-background = ${color.BACKGROUND}
-label-urgent-underline = ${color.RED}
-label-urgent-padding = 1
+label-urgent = %index%
+label-urgent-foreground = #ffffff
+label-urgent-background = #bf5151
+label-urgent-padding = 2
 
-label-empty = %name%
-label-empty-foreground = ${color.FOREGROUND}
-label-empty-padding = 1
-
-;Separator in between workspaces
-label-separator = " "
-;label-separator-padding = 0
-;label-separator-foreground = ${color.ALTBLACK}
-
+label-empty = %index%
+label-empty-foreground =  
+label-empty-padding = 2
 
 [module/wlan]
 type = internal/network
@@ -163,13 +153,10 @@ interval = 1
 date = "%Y-%m-%d"
 date-alt = %a, %d %b %Y
 
-
 time-alt = %H:%M:%S
-
 time = %I:%M:%p
 
 label = %date%  %time%
-
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -184,17 +171,15 @@ format-volume = <label-volume>
 ;<ramp-volume> 
 label-volume = %percentage%%
 label-muted = muted
-
-ramp-volume-0 =
-ramp-volume-1 =
-ramp-volume-2 =
+;ramp-volume-0 =
+;ramp-volume-1 =
+;ramp-volume-2 =
 
 ;click-middle =
 click-right = pavucontrol
 
 [module/cpu]
 type = internal/cpu
-
 interval = 0.5
 
 format = <label>
@@ -237,7 +222,7 @@ poll-interval = 5
 ; see "man date" for details on how to format the time string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
 ; Default: %H:%M:%S
-time-format = %H:%M
+;time-format = %H:%M
 
 ; Available tags:
 ;   <label-charging> (default)
