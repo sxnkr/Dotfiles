@@ -27,9 +27,11 @@ xsetroot -cursor_name left_ptr &
 #Enable touchpad tap
 xinput set-prop "ELAN0710:01 04F3:30ED Touchpad" "libinput Tapping Enabled" 1 &
 #set wallpaper
-feh --bg-fill /home/alvarez/wallpaper.sxnkr/nordic-wallpapers/Cpu-city.png  &
+feh --bg-fill /home/alvarez/wallpaper.sxnkr/desktop.wall/cyborg_gruv.png  &
 #compositor
 picom &
+#resol
+xrandr --rate 144 &
 #polybar
 ~/.config/polybar/launch.sh &
 #NotificationDaemon

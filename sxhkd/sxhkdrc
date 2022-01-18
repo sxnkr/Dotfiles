@@ -33,10 +33,10 @@ super + Escape
 
 #screenshots
 super + v
-        maim --select | tee  ~/Pictures/Screenshots/$(date +%F-%T).png
+        maim --select | tee  ~/stuff/screenshots/$(date +%F-%T).png
 
 super + shift + v
-	maim --select | tee  ~/Pictures/Screenshots/$(date +%F-%T).png | xclip -selection clipboard -t image/png 
+	maim --select | tee ~/stuff/screenshots/$(date +%F-%T).png | xclip -selection clipboard -t image/png 
 
 # lockscreen
 alt + shift + x
