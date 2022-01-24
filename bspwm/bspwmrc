@@ -2,7 +2,9 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII # IX
+bspc monitor eDP-1 -d I II III IV V VI VII #VIII # IX
+bspc monitor HDMI-1-0 -d VIII IX
+xrandr --auto --output HDMI-1-0 --mode 1366x768 --right-of eDP-1
 
 bspc config border_width         0.55
 bspc config window_gap           12.5
@@ -20,6 +22,8 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a feh state=floating
 bspc rule -a sxiv state=floating
 bspc rule -a alacritty -e cmus state=floating
+bspc rule -a qBittorrent state=floating
+bspc rule -a galculator state=floating
 bspc rule -a Screenkey manage=off
 ## AutoStart Ups ----------------------------------------------#
 #set cursor
@@ -36,5 +40,5 @@ xrandr --rate 144 &
 ~/.config/polybar/launch.sh &
 #NotificationDaemon
 dunst &
-#Clipboard 
+#Clipboard
 greenclip daemon &

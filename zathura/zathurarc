@@ -18,9 +18,9 @@ set recolor-darkcolor "#d2d2d2"
 set recolor "true"
 set recolor-keephue "true"
 
-#
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 #set page-padding 1
 
-
+map p print
+map i recolor

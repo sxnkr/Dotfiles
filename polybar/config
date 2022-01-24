@@ -231,9 +231,9 @@ poll-interval = 5
 ;   <animation-charging>
 format-charging = <label-charging>
 ;<animation-charging> <label-charging>
-format-charging-prefix = " "
-format-charging-prefix-font = 1
-format-charging-prefix-foreground = ${colors.green}
+;format-charging-prefix = " "
+;format-charging-prefix-font = 1
+format-charging-foreground = ${colors.green}
 
 ;Available tags:
 ;   <label-discharging> (default)
@@ -264,13 +264,13 @@ label-discharging = %percentage%%
 ; Available tokens:
 ;   %percentage% (default)
 format-full = <label-full>
-format-full-prefix = " "
-format-full-prefix-font = 2
+;format-full-prefix = " "
+;format-full-prefix-font = 2
 ;Available tokens:
 ;   %percentage% (default)
 ;   %time%
 ;   %consumption% (shows current charge rate in watts)
-format-full-prefix-foreground = ${colors.red}
+format-full-foreground = ${colors.red}
 label-full = %percentage%%
 
 ; Only applies if <ramp-capacity> is used
