@@ -17,3 +17,7 @@ if [[ $(xrandr -q | grep 'HDMI-1-0 connected') ]]; then
         xrandr  --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1-0 --mode 1366x768 --rotate normal --right-of eDP-1
 fi
 ```
+### Remove orphans
+```
+sudo pacman -Rns $(pacman -Qtdq)
+```
